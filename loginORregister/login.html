@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录</title>
+<style type="text/css">
+.form
+{
+	height:300px;
+	width:500px;
+	border:groove;
+	text-align:center;
+	margin-left:300px;
+	margin-top:200px;
+}
+</style>
+</head>
+
+<body>
+<script>
+function check(f)
+{
+   if(f.username.value.length==0||f.username.value.length<6||f.username.value.length>18)
+   {      
+       
+	    alert("请输入正确的用户名，长度为6-18位，只能包含数字和字母"); 
+		f.username.focus();
+		return false;    
+   }
+     if(f.pass.value.length==0||f.pass.value.length<6||f.pass.value.length>18)
+   {      
+         
+	    alert("请输入正确的密码，长度为6-18位，只能包含数字和字母");   
+		f.pass.focus();
+		return false;   
+   }	
+return true;
+	
+ 
+}
+</script>
+<div class="form">
+
+
+
+
+<form action="login.php"  method="post" onsubmit=" return check(this);">
+
+<p style="font-size:36px"><strong>login</strong></p>
+
+<p>Username:<input name="username" id="username" type="text" /></p>
+
+<p>Password:<input  name="pass" id="pass" type="password" /></p>
+
+<input type="submit"  value="登录"/>
+<input type="reset" />
+
+</form>
+
+
+
+
+</div>
+
+</body>
+</html>
+

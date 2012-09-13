@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+.banner
+{
+	border:solid 1px #CCC;
+	width:1000px;
+	height:150px;
+
+}
+.banner1
+{
+	border:solid 1px #CCC;
+	width:1000px;
+	height:50px;
+	background:#000;
+	
+}
+.inbanner1
+{
+	
+	width:100px;
+	height:30px;
+	color:#999;
+	float:left;
+	margin-left:2px;
+	margin-top:10px;
+	text-align:center;
+	font-size:24px;
+	
+}
+
+.inbanner2
+{
+	
+	width:100px;
+	height:30px;
+	color:#999;
+	float:left;
+	margin-left:302px;
+	margin-top:10px;
+	text-align:center;
+	font-size:24px;
+	
+}
+.content
+{
+	border:solid 1px #CCC;
+    width:1000px;
+    height:700px;
+	
+}
+.incontent1
+{
+	
+	width:600px;
+	height:auto;
+	float:left;
+	margin-left:200px;
+	margin-top:40px;
+	text-align:center;
+	border:solid 1px #CCC;
+	font-size:24px;
+	
+}
+.footer
+{
+	
+	width:1000px;
+	height:auto;
+	float:left;
+	
+	margin-top:40px;
+	text-align:center;
+	border:solid 1px #CCC;
+	color:#CCC;
+	
+	
+	
+	}
+a.one:link {color:#CCC;}
+a.one:visited{color:#CCC;}
+a.one:hover {color:#FFF;}

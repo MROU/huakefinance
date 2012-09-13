@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册</title>
+<style type="text/css">
+.form
+{
+	height:300px;
+	width:500px;
+	border:groove;
+	text-align:center;
+	margin-left:300px;
+	margin-top:200px;
+}
+</style>
+</head>
+
+<body>
+
+<script>
+function check(f)
+{
+   var regex = /^([0-9A-Za-z]{6,18})$/g;
+   var regex1 = /^([0-9A-Za-z]{6,18})$/g;
+	
+   if(!regex.test(f.username.value))
+   {      
+       
+	    alert("请输入正确的用户名，长度为6-18位，只能包含数字和字母"); 
+		f.username.focus();
+		return false;    
+   }
+     if(!regex1.test(f.pass.value))
+   {      
+         
+	    alert("请输入正确的密码，长度为6-18位，只能包含数字和字母");   
+		f.pass.focus();
+		return false;   
+   }	
+
+	var regex = /^([0-9A-Za-z\-_\.]+)@([0-9a-z]+\.[a-z]{2,3}(\.[a-z]{2})?)$/g;
+	 if ( !regex.test(f.email.value))
+	 {
+	   alert("邮件地址不合法");	
+	   f.email.focus(); 
+	    return false;
+	}
+	
+    document.getElementById("gif").style.display='block';
+	return true;
+}
+</script>
+<div align="center"><img   id="gif"    style="display:none" src="../images/19-0.gif" /></div>
+<div class="form">
+
+
+
+
+<form action="register.php" method="post" onsubmit="return check(this)">
+
+<p style="font-size:36px"><strong>register</strong></p>
+
+<p>Username:<input name="username" id="username" type="text" /></p>
+
+<p>Password:<input  name="pass" id="pass" type="password" /></p>
+
+<p>Email：<input type="text" name="email" id="email" /></p>
+<input type="submit"  value="登录"/>
+<input type="reset" />
+
+</form>
+
+
+
+
+</div>
+
+</body>
+</html>
